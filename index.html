@@ -2377,11 +2377,9 @@ background:rgba(0,0,0,0.5); z-index:999; justify-content:center; align-items:cen
 
   // === Fungsi atur dropdown kelas ===
 function aturDropdownKelas(user) {
-  const semuaKelas = [  "kelas_01","kelas_012526","kelas_02"];
+  const semuaKelas = [  "kelas_012526"];
 
-  const namaKelasCustom = {  kelas_01: "Ust. Dicky Miswardi, B.A.",
-  kelas_012526: "Ust. Moro, B.A.",
-  kelas_02: "Ust. Obie Zarobie, B.A."};
+  const namaKelasCustom = {  kelas_012526: "Ust. Habibie"};
 
   kelasSelect.innerHTML = "";
 
@@ -3571,9 +3569,7 @@ function jenjangLabel(code) {
   // === Helper Kelas/Kelompok ===
   function buildKelasKelompokLine(kelas, kelasEl) {
     const kelasNum = (String(kelas||'').match(/(\d+)/)?.[1]) || (kelas || '-');
-    const custom = window.namaKelasCustom || window.NAMA_KELAS_CUSTOM || {  kelas_01: "Kelompok Ust. Dicky Miswardi, B.A.",
-  kelas_012526: "Kelompok Ust. Moro, B.A.",
-  kelas_02: "Kelompok Ust. Obie Zarobie, B.A."};
+    const custom = window.namaKelasCustom || window.NAMA_KELAS_CUSTOM || {  kelas_012526: "Kelompok Ust. Habibie"};
     let kelompok = custom[kelas] || "";
     if (!kelompok) {
       const optText = kelasEl?.options?.[kelasEl.selectedIndex]?.text?.trim() || "";
