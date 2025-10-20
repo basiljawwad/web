@@ -2589,9 +2589,9 @@ background:rgba(0,0,0,0.5); z-index:999; justify-content:center; align-items:cen
 
   // === Fungsi atur dropdown kelas ===
 function aturDropdownKelas(user) {
-  const semuaKelas = [  "kelas_012526"];
+  const semuaKelas = [  "kelas_012025"];
 
-  const namaKelasCustom = {  kelas_012526: "Ustadz Habibie"};
+  const namaKelasCustom = {  kelas_012025: "Ustadz Habibie"};
 
   kelasSelect.innerHTML = "";
 
@@ -4713,7 +4713,7 @@ function _isMeaningfulKBM(rec){
   // === Helper Kelas/Kelompok ===
 function buildKelasKelompokLine(kelas, kelasEl) {
   const kelasNum = (String(kelas||'').match(/(\d+)/)?.[1]) || (kelas || '-');
-  const custom = window.namaKelasCustom || window.NAMA_KELAS_CUSTOM || {  kelas_012025: "Ust. Tukimin",
+  const custom = window.namaKelasCustom || window.NAMA_KELAS_CUSTOM || {  kelas_012025: "Ust. Habibie",
   kelas_022025: "Ust. Dicky Miswardi",
   kelas_032025: "Ust. Jundullah BA",
   kelas_042025: "Ust. Abdullah",
